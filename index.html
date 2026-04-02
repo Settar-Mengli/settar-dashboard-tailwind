@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" class="m-0 p-0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Influencer Analytics Dashboard</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="m-0 p-0 min-h-screen bg-stone-100 text-slate-900 [font-family:Manrope,sans-serif]">
+    <div class="m-0 flex min-h-screen w-full flex-col md:flex-row">
+      <header class="hidden border-r border-slate-800 bg-slate-900 text-white md:block md:min-h-screen md:w-72">
+        <nav class="h-full bg-slate-900 px-4 py-5 sm:px-6 md:px-5 md:py-8" aria-label="Sidebar navigation">
+          <div class="mb-6 flex items-center justify-between md:mb-10 md:justify-start">
+            <h1 class="text-lg font-extrabold tracking-tight text-green-400 sm:text-xl">Creator Pulse</h1>
+            <span class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-200">Live</span>
+          </div>
+
+          <ul class="grid grid-cols-2 gap-2 text-sm font-semibold sm:grid-cols-3 md:grid-cols-1 md:gap-1">
+            <li>
+              <a href="#" class="block rounded-xl bg-green-800 px-4 py-3 text-white shadow-sm transition hover:bg-green-700">Overview</a>
+            </li>
+            <li>
+              <a href="#" class="block rounded-xl px-4 py-3 text-white transition hover:bg-slate-800">Campaigns</a>
+            </li>
+            <li>
+              <a href="#" class="block rounded-xl px-4 py-3 text-white transition hover:bg-slate-800">Creators</a>
+            </li>
+            <li>
+              <a href="#" class="block rounded-xl px-4 py-3 text-white transition hover:bg-slate-800">Products</a>
+            </li>
+            <li>
+              <a href="#" class="block rounded-xl px-4 py-3 text-white transition hover:bg-slate-800">Payouts</a>
+            </li>
+            <li>
+              <a href="#" class="block rounded-xl px-4 py-3 text-white transition hover:bg-slate-800">Settings</a>
+            </li>
+          </ul>
+
+          <article class="mt-6 rounded-2xl bg-slate-800 p-4 text-white sm:mt-7 md:mt-10">
+            <h2 class="text-xs font-bold uppercase tracking-[0.18em] text-cyan-200">Current Goal</h2>
+            <p class="mt-2 text-sm font-medium text-slate-100">Reach 30% uplift in creator-driven conversions this month.</p>
+          </article>
+        </nav>
+      </header>
+
+      <main class="flex-1 px-4 pt-5 pb-24 sm:px-6 md:px-8 md:py-8 md:pb-8 lg:px-10" aria-label="Influencer analytics dashboard content">
+        <header class="mb-6 sm:mb-7 md:mb-8">
+          <p class="text-xs font-bold uppercase tracking-[0.2em] text-cyan-700">Influencer Analytics</p>
+          <h2 class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">Campaign Performance Snapshot</h2>
+        </header>
+
+        <section aria-label="Top KPI widgets" class="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mb-8 lg:grid-cols-3">
+          <article class="rounded-2xl border border-green-800 bg-green-800 p-5 text-white shadow-sm sm:col-span-1 lg:col-span-1">
+            <h3 class="text-sm font-semibold text-white">Total Commissions</h3>
+            <p class="mt-3 text-3xl font-extrabold text-white">$92,480</p>
+            <p class="mt-2 text-sm font-semibold text-white">+14.8% vs last month</p>
+          </article>
+
+          <article class="rounded-2xl border border-stone-700 bg-stone-700 p-5 text-white shadow-sm sm:col-span-1 lg:col-span-1">
+            <h3 class="text-sm font-semibold text-white">Total Revenue</h3>
+            <p class="mt-3 text-3xl font-extrabold text-white">$640,125</p>
+            <p class="mt-2 text-sm font-semibold text-white">+21.3% from campaigns</p>
+          </article>
+
+          <article class="rounded-2xl border border-amber-700 bg-amber-700 p-5 text-white shadow-sm sm:col-span-2 lg:col-span-1">
+            <h3 class="text-sm font-semibold text-white">Engagement Rate</h3>
+            <p class="mt-3 text-3xl font-extrabold text-white">7.9%</p>
+            <p class="mt-2 text-sm font-semibold text-white">Top quartile benchmark</p>
+          </article>
+        </section>
+
+        <section aria-label="Performance drivers" class="mb-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 lg:grid-cols-3">
+          <article class="rounded-2xl border border-green-200 border-l-4 border-green-800 bg-green-50 p-5 shadow-sm">
+            <h3 class="text-base font-bold text-slate-900">Performance by Platform</h3>
+            <p class="mt-2 text-sm text-slate-600">Instagram leads with 48% of attributed sales, followed by TikTok at 33%.</p>
+            <p class="mt-4 text-sm font-semibold text-slate-800">Top platform: Instagram</p>
+          </article>
+
+          <article class="rounded-2xl border border-stone-200 border-l-4 border-stone-700 bg-stone-50 p-5 shadow-sm">
+            <h3 class="text-base font-bold text-slate-900">Performance by Product</h3>
+            <p class="mt-2 text-sm text-slate-600">Bundles converted 1.7x higher than single-item links across creator posts.</p>
+            <p class="mt-4 text-sm font-semibold text-slate-800">Top product line: Starter Bundle</p>
+          </article>
+
+          <article class="rounded-2xl border border-amber-200 border-l-4 border-amber-700 bg-amber-50 p-5 shadow-sm md:col-span-2 lg:col-span-1">
+            <h3 class="text-base font-bold text-slate-900">Conversion Rate</h3>
+            <p class="mt-2 text-sm text-slate-600">Overall conversion reached 4.6%, with affiliate stories converting best.</p>
+            <p class="mt-4 text-sm font-semibold text-slate-800">Best channel: Story swipe-ups</p>
+          </article>
+        </section>
+
+        <section aria-label="Products performance table" class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <header class="border-b border-slate-200 px-5 py-4">
+            <h3 class="text-base font-bold text-slate-900">Products Overview</h3>
+          </header>
+
+          <div class="overflow-x-auto">
+            <table class="min-w-full text-left text-sm">
+              <thead class="bg-green-900 text-xs font-bold uppercase tracking-wide text-white">
+                <tr>
+                  <th scope="col" class="px-5 py-3">Product</th>
+                  <th scope="col" class="px-5 py-3">Price</th>
+                  <th scope="col" class="px-5 py-3">Commissions</th>
+                  <th scope="col" class="px-5 py-3">Conversions</th>
+                  <th scope="col" class="px-5 py-3">ROI</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Starter Bundle</td>
+                  <td class="px-5 py-4">$79</td>
+                  <td class="px-5 py-4">$18,240</td>
+                  <td class="px-5 py-4">1,148</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">312%</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Glow Serum</td>
+                  <td class="px-5 py-4">$42</td>
+                  <td class="px-5 py-4">$11,930</td>
+                  <td class="px-5 py-4">864</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">274%</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Creator Kit</td>
+                  <td class="px-5 py-4">$129</td>
+                  <td class="px-5 py-4">$24,050</td>
+                  <td class="px-5 py-4">592</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">338%</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Hydration Pack</td>
+                  <td class="px-5 py-4">$56</td>
+                  <td class="px-5 py-4">$14,680</td>
+                  <td class="px-5 py-4">977</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">291%</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Night Repair Cream</td>
+                  <td class="px-5 py-4">$68</td>
+                  <td class="px-5 py-4">$16,120</td>
+                  <td class="px-5 py-4">721</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">305%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section aria-label="Platforms performance table" class="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm lg:mt-8">
+          <header class="border-b border-slate-200 px-5 py-4">
+            <h3 class="text-base font-bold text-slate-900">Platforms Overview</h3>
+          </header>
+
+          <div class="overflow-x-auto">
+            <table class="min-w-full text-left text-sm">
+              <thead class="bg-green-900 text-xs font-bold uppercase tracking-wide text-white">
+                <tr>
+                  <th scope="col" class="px-5 py-3">Platform</th>
+                  <th scope="col" class="px-5 py-3">Reach</th>
+                  <th scope="col" class="px-5 py-3">Engagement</th>
+                  <th scope="col" class="px-5 py-3">Conversions</th>
+                  <th scope="col" class="px-5 py-3">Best Metric</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Instagram</td>
+                  <td class="px-5 py-4">1.8M</td>
+                  <td class="px-5 py-4">8.4%</td>
+                  <td class="px-5 py-4">2,140</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">Story CTR 6.2%</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">TikTok</td>
+                  <td class="px-5 py-4">2.3M</td>
+                  <td class="px-5 py-4">10.1%</td>
+                  <td class="px-5 py-4">1,870</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">Video views 1.1M</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">YouTube</td>
+                  <td class="px-5 py-4">940K</td>
+                  <td class="px-5 py-4">6.9%</td>
+                  <td class="px-5 py-4">1,120</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">Watch time 5m 42s</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section aria-label="Campaigns performance table" class="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm lg:mt-8">
+          <header class="border-b border-slate-200 px-5 py-4">
+            <h3 class="text-base font-bold text-slate-900">Campaigns Overview</h3>
+          </header>
+
+          <div class="overflow-x-auto">
+            <table class="min-w-full text-left text-sm">
+              <thead class="bg-green-900 text-xs font-bold uppercase tracking-wide text-white">
+                <tr>
+                  <th scope="col" class="px-5 py-3">Campaign</th>
+                  <th scope="col" class="px-5 py-3">Date</th>
+                  <th scope="col" class="px-5 py-3">Product Promoted</th>
+                  <th scope="col" class="px-5 py-3">Results</th>
+                  <th scope="col" class="px-5 py-3">Performance</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Spring Glow Push</td>
+                  <td class="px-5 py-4">2026-03-10</td>
+                  <td class="px-5 py-4">Glow Serum</td>
+                  <td class="px-5 py-4">12.4K clicks, 684 sales</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">Exceeded target by 18%</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Creator Weekend Drop</td>
+                  <td class="px-5 py-4">2026-03-18</td>
+                  <td class="px-5 py-4">Creator Kit</td>
+                  <td class="px-5 py-4">9.8K clicks, 411 sales</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">ROI 326%</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Bundle Boost Week</td>
+                  <td class="px-5 py-4">2026-03-27</td>
+                  <td class="px-5 py-4">Starter Bundle</td>
+                  <td class="px-5 py-4">15.7K clicks, 1,032 sales</td>
+                  <td class="px-5 py-4 font-semibold text-emerald-700">Top converting campaign</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <nav class="fixed right-0 bottom-0 left-0 z-20 border-t border-slate-200 bg-white/95 px-2 py-2 backdrop-blur md:hidden" aria-label="Bottom navigation">
+        <ul class="grid grid-cols-3 gap-2 text-xs font-semibold sm:grid-cols-6 sm:text-sm">
+          <li>
+            <a href="#" class="block rounded-lg bg-slate-900 px-2 py-2 text-center text-white">Overview</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg px-2 py-2 text-center text-slate-600 transition hover:bg-slate-100 hover:text-slate-900">Campaigns</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg px-2 py-2 text-center text-slate-600 transition hover:bg-slate-100 hover:text-slate-900">Creators</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg px-2 py-2 text-center text-slate-600 transition hover:bg-slate-100 hover:text-slate-900">Products</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg px-2 py-2 text-center text-slate-600 transition hover:bg-slate-100 hover:text-slate-900">Payouts</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg px-2 py-2 text-center text-slate-600 transition hover:bg-slate-100 hover:text-slate-900">Settings</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
